@@ -279,13 +279,13 @@
         <h2>
           <span>
             <i class="fas fa-search" aria-hidden="true"></i>
-            <span class="title">Search</span>
+            <span class="title">本地搜索</span>
           </span>
           <i class="fas fa-times close" pointer style="float:right;" aria-hidden="true" @click.self="cancelDialogVisible()"></i>
         </h2>
         <form class="site-search-form">
           <input type="text"
-            placeholder="Please enter keywords"
+            placeholder="请输入关键字"
             id="local-search-input" 
             @click="getSearchFile()"
             class="st-search-input"
@@ -384,7 +384,7 @@
     
       
         <span class="post-detail-header_date">
-          <i class="fas fa-calendar"></i> Published in：2025-11-22 |
+          <i class="fas fa-calendar"></i> 发表于：2025-11-22 |
         </span>
       
 
@@ -420,16 +420,16 @@
         <div class="copyright">
   <ul class="post-copyright">
     <li class="post-copyright-author">
-    <strong>author:  </strong>John Doe</a>
+    <strong>作者:  </strong>王洋</a>
     </li>
     <li class="post-copyright-link">
-    <strong>link:  </strong>
+    <strong>文章链接:  </strong>
     <a href="/2025/11/22/【Hexo】test/" target="_blank" title="【Hexo】test">http://example.com/2025/11/22/【Hexo】test/</a>
     </li>
     <li class="post-copyright-license">
-      <strong>Copyright notice:   </strong>
-      All articles on this website, unless otherwise stated, adopt <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">CC BY-NC-ND 4.0</a>
-      reprint policy. If reproduced, please indicate source!
+      <strong>版权声明:   </strong>
+      本网站所有文章除特别声明外,均采用 <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">CC BY-NC-ND 4.0</a>
+      许可协议。转载请注明出处!
     </li>
   </ul>
 <div>
@@ -450,7 +450,7 @@
     </div>
     <a href="/2025/11/23/ms_office%E5%85%8D%E8%B4%B9%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/%E3%80%90WY-sea%E3%80%91ms_office%E5%85%8D%E8%B4%B9%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/" class="post-nav-link">
       <div class="title">
-        <i class="fas fa-angle-left"></i> Prev:
+        <i class="fas fa-angle-left"></i> 上一篇:
         <div class="title-text">MS office 免费安装配置</div>
       </div>
       
@@ -471,7 +471,7 @@
     </div>
     <a href="/2025/11/22/hello-world/" class="post-nav-link">
       <div class="title">
-        Next: <i class="fas fa-angle-right"></i>
+        下一篇: <i class="fas fa-angle-right"></i>
         <div class="title-text">Hello World</div>
       </div>
       <!-- <div class="content">
@@ -1563,7 +1563,7 @@
       },
       mounted() {
         const that = this;
-        var copy = 'copy';
+        var copy = '复制';
         /* code */
         var initCopyCode = function () {
           var copyHtml = '';

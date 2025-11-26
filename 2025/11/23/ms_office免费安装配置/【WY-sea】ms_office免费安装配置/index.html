@@ -279,13 +279,13 @@
         <h2>
           <span>
             <i class="fas fa-search" aria-hidden="true"></i>
-            <span class="title">Search</span>
+            <span class="title">本地搜索</span>
           </span>
           <i class="fas fa-times close" pointer style="float:right;" aria-hidden="true" @click.self="cancelDialogVisible()"></i>
         </h2>
         <form class="site-search-form">
           <input type="text"
-            placeholder="Please enter keywords"
+            placeholder="请输入关键字"
             id="local-search-input" 
             @click="getSearchFile()"
             class="st-search-input"
@@ -384,7 +384,7 @@
     
       
         <span class="post-detail-header_date">
-          <i class="fas fa-calendar"></i> Published in：2025-11-23 |
+          <i class="fas fa-calendar"></i> 发表于：2025-11-23 |
         </span>
       
 
@@ -409,7 +409,7 @@
     <article class="post post-detail">
       <div class="post-content">
         <h1 id="MS-office-免费安装配置-（保姆级教学！！）"><a href="#MS-office-免费安装配置-（保姆级教学！！）" class="headerlink" title="MS office 免费安装配置      _ （保姆级教学！！）"></a>MS office 免费安装配置      _ （保姆级教学！！）</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>我们当初买电脑的时候可能都会出现一个问题，买电脑的官方会给我们一个限时’’免费’’的MS office全家桶，有的一年，有的两年，等到两年之后，全家桶失效了，系统会自动给我装一个WPS的office，然后我们就傻眼了，因为都用了很长时间的MS了，突然一换，我们会很不熟悉，而再想弄成MS，就需要买了。所以我写这篇博客就是想让看到这篇文章的人能够学会<strong>白嫖</strong>MS office 全家桶。</p>
+<p>我们当初买电脑的时候可能都会出现一个问题，买电脑的官方会给我们一个限时’’免费’’的MS office全家桶，有的一年，有的两年，等到两年之后，全家桶失效了，<strong>系统会自动给我们装一个WPS的office，甚至是不装，就是突然用不了什么word,excel，ppt了</strong>，然后我们就傻眼了，因为都用了很长时间的MS了，<strong>突然一换</strong>，<strong>我们会很不熟悉</strong>，而再想弄成MS，就需要买了。所以我写这篇博客就是想让看到这篇文章的人能够学会<strong>白嫖</strong>MS office 全家桶。</p>
 </blockquote>
 <h2 id="一-安装前注意"><a href="#一-安装前注意" class="headerlink" title="一.安装前注意"></a>一.安装前注意</h2><blockquote>
 <p>如果电脑已经是重装系统的话可以直接跳到第二步 </p>
@@ -426,12 +426,63 @@
 </blockquote>
 <p>下载之后直接 在里面<strong>搜索office</strong>就行  </p>
 <blockquote>
-<p><img src="/./geek_img.png" class="lazyload placeholder" data-srcset="/./geek_img.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="icon" title="卸载界面"></p>
+<p><img src="/./image.png" class="lazyload placeholder" data-srcset="/./image.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="icon" title="卸载界面"></p>
 </blockquote>
 <p>索引到直接点击卸载就行</p>
 <h3 id="2-通过系统自带的卸载工具卸载"><a href="#2-通过系统自带的卸载工具卸载" class="headerlink" title="2.通过系统自带的卸载工具卸载"></a><em>2</em>.通过系统自带的卸载工具卸载</h3><h4 id="在终端输入-appwiz-cpl-命令即可调出系统自带的卸载工具了"><a href="#在终端输入-appwiz-cpl-命令即可调出系统自带的卸载工具了" class="headerlink" title="在终端输入 appwiz.cpl 命令即可调出系统自带的卸载工具了"></a>在终端输入 <code>appwiz.cpl</code> 命令即可调出系统自带的卸载工具了</h4><h4 id="也可以直接-win-i-打开设置然后点开应用去卸载也是可以的"><a href="#也可以直接-win-i-打开设置然后点开应用去卸载也是可以的" class="headerlink" title="也可以直接 win+i 打开设置然后点开应用去卸载也是可以的"></a>也可以直接 <code>win+i</code> 打开设置然后点开应用去卸载也是可以的</h4><p><img src="/./cmd_xiezai.png" class="lazyload placeholder" data-srcset="/./cmd_xiezai.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="icon" title="卸载界面"></p>
-<h2 id="二-部署工作"><a href="#二-部署工作" class="headerlink" title="二. 部署工作"></a>二. 部署工作</h2><h3 id="1-准备工作（check-it）"><a href="#1-准备工作（check-it）" class="headerlink" title="1.准备工作（check it）"></a>1.准备工作（check it）</h3><h4 id="检查我们的office是否卸载完全"><a href="#检查我们的office是否卸载完全" class="headerlink" title="检查我们的office是否卸载完全"></a>检查我们的office是否卸载完全</h4><pre><code>&gt; 直接返回桌面，右键新建，如果还是有什么
+<h2 id="二-部署工作"><a href="#二-部署工作" class="headerlink" title="二. 部署工作"></a>二. 部署工作</h2><h3 id="1-准备工作（check-it）"><a href="#1-准备工作（check-it）" class="headerlink" title="1.准备工作（check it）"></a>1.准备工作（check it）</h3><h4 id="检查我们的office是否卸载完全"><a href="#检查我们的office是否卸载完全" class="headerlink" title="检查我们的office是否卸载完全"></a>检查我们的office是否卸载完全</h4><pre><code>&gt; 直接返回桌面，右键新建，如果还是有诸如
+&gt; - word,excel,ppt 的可新建的文件类型的话，
+&gt;多半是没有成功卸载，或者卸载不干净，请重复上述卸载步骤
 </code></pre>
+<h4 id="检查完毕卸载完全进行以下步骤"><a href="#检查完毕卸载完全进行以下步骤" class="headerlink" title="检查完毕卸载完全进行以下步骤"></a>检查完毕卸载完全进行以下步骤</h4><h5 id="1-在微软官网上下载部署工具"><a href="#1-在微软官网上下载部署工具" class="headerlink" title="1.在微软官网上下载部署工具"></a>1.在微软官网上下载部署工具</h5><p>链 接:<code>https://www.microsoft.com/enus/download/details.aspx?id=49117</code></p>
+<h5 id="2-在桌面上创建一个文件夹，命名为office，使用部署工具下载文件，选择新建的文件夹将部署文件下载到该文件夹中"><a href="#2-在桌面上创建一个文件夹，命名为office，使用部署工具下载文件，选择新建的文件夹将部署文件下载到该文件夹中" class="headerlink" title="2.在桌面上创建一个文件夹，命名为office，使用部署工具下载文件，选择新建的文件夹将部署文件下载到该文件夹中"></a>2.在桌面上创建一个文件夹，命名为office，使用部署工具下载文件，选择新建的文件夹将部署文件下载到该文件夹中</h5><h5 id="3-使用微软office自定义工具"><a href="#3-使用微软office自定义工具" class="headerlink" title="3.使用微软office自定义工具"></a>3.使用微软office自定义工具</h5><p><code>https://config.office.com/deploymentsettings</code>(链接)</p>
+<blockquote>
+<p><em>设置相关配置</em>，选择自己想配置的类型（<strong>最好选有批量许可证的</strong>），其他选择语音包，<strong>前面全默认</strong>，导出文件名改成<strong>config</strong>，将其复制到office文件夹里面</p>
+</blockquote>
+<p><strong>在配置的这个步骤也需要注意：</strong> <em>如果没那么多的需求，可以只勾选word,excel,ppt，因为如果勾选过多后面需要等待下载很长时间，<strong>下载时间越长，越容易出现问题</strong></em></p>
+<h3 id="注意"><a href="#注意" class="headerlink" title="注意:"></a>注意:</h3><p>查看自己电脑是多少位的可以在终端（cmd）里面输入<code>systeminfo</code>在系统配置里面可以查看x64就是64位，如果是x32就是32位，大多数电脑是64位，就是x64  </p>
+<h5 id="4-将文件夹的路径复制使用管理员身份进入终端（cmd）使用cd进行访问，然后"><a href="#4-将文件夹的路径复制使用管理员身份进入终端（cmd）使用cd进行访问，然后" class="headerlink" title="4.将文件夹的路径复制使用管理员身份进入终端（cmd）使用cd进行访问，然后"></a>4.将文件夹的路径复制使用管理员身份进入终端（cmd）使用cd进行访问，然后</h5><blockquote>
+<ul>
+<li>下载命令:<br><code>setup /download config.xml</code></li>
+</ul>
+</blockquote>
+<ul>
+<li><ul>
+<li>安装命令:<br><code>setup /configure config.xml</code></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>依次输入，下载并安装office然后等待最后一步激活</p>
+</blockquote>
+<h3 id="注意-1"><a href="#注意-1" class="headerlink" title="注意"></a>注意</h3><p><strong>这步骤的时候需要注意！！ 下载和安装的时候可能会出现卡顿，下载的时候如果超过10分钟仍在加载，可能会出现以下两种 原因:</strong></p>
+<ul>
+<li><em>1. 网络问题，没联网，ctrl+c中止任务，然后联网重新下载安装就可以。</em></li>
+<li><em>2. 卡顿问题，有的时候就是下载时间需要很长很长，这时候我们可以直接中止任务，但是下载时间不能太短，<strong>如果太短，是可以安装的</strong>，但是可能会出现虽然已经安装了，某个文件类型在使用的过程中会不被电脑所识别</em></li>
+</ul>
+<h3 id="注意！"><a href="#注意！" class="headerlink" title="注意！"></a>注意！</h3><p> <strong>—–扩展命令<code>ctl</code>在windows系统中是清除缓存的，如果需要重新下载，可以先清除缓存，再进行我们的下载安装任务</strong></p>
+<blockquote>
+<p>做完这步的时候我们就可以使用新建一个office的任意文件，比如说word，然后点击查看账户，应该是未激活状态，</p>
+</blockquote>
+<h3 id="三、最后一步"><a href="#三、最后一步" class="headerlink" title="三、最后一步"></a>三、最后一步</h3><p><strong>！（使用管理员权限在终端进行操作）！</strong></p>
+<ul>
+<li><ol>
+<li>安装目录内找到 ospp.vbs 文件路径<br>  <code>cd C:\Program Files\Microsoft Office\Office16</code> (64 位)<br>  <code>cd C:\Program Files (x86)\Microsoft Office\Office16</code>(32 位)</li>
+</ol>
+</li>
+<li><ol start="2">
+<li><code>cscript ospp.vbs /sethst:kms.03k.org</code></li>
+</ol>
+</li>
+<li><ol start="3">
+<li><code>cscript ospp.vbs /act</code>	激活</li>
+</ol>
+</li>
+</ul>
+<p><img src="/%E8%B4%A6%E6%88%B7%E6%89%80%E5%9C%A8%E4%BD%8D%E7%BD%AE.png" class="lazyload placeholder" data-srcset="/%E8%B4%A6%E6%88%B7%E6%89%80%E5%9C%A8%E4%BD%8D%E7%BD%AE.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="icon"></p>
+<p><strong>最后，和安装完之后的步骤一样，随便新建一个office文件，(就是word,excel,ppt之类的)，然后点击账户，如果是以下这样就证明激活成功啦！！ 恭喜您拥有了白嫖的永久的office ！！！</strong><br><img src="/%E6%BF%80%E6%B4%BB%E6%88%90%E5%8A%9F.png" class="lazyload placeholder" data-srcset="/%E6%BF%80%E6%B4%BB%E6%88%90%E5%8A%9F.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="icon"></p>
+<h3 id="附言："><a href="#附言：" class="headerlink" title="附言："></a>附言：</h3><p><strong>除非您重新装机，否则office不会莫名其妙过期消失</strong></p>
+<h1 id="！！！最重要的噢，配置完成之后，可以把桌面上的配置文件删掉了哦，下次用的话再次看教程重新下就行咯，不会影响正常使用"><a href="#！！！最重要的噢，配置完成之后，可以把桌面上的配置文件删掉了哦，下次用的话再次看教程重新下就行咯，不会影响正常使用" class="headerlink" title="！！！最重要的噢，配置完成之后，可以把桌面上的配置文件删掉了哦，下次用的话再次看教程重新下就行咯，不会影响正常使用"></a>！！！最重要的噢，配置完成之后，可以把桌面上的配置文件删掉了哦，下次用的话再次看教程重新下就行咯，不会影响正常使用</h1><p>目前教程还暂时没有配太多图文，因为作者是早早白嫖的，白嫖到的是24年最新版本的，现在白嫖都是旧版本的了，所以作者的图片没有演示全过程，图文描述很多都是文，能白嫖到就好，图片说明下次再进行更新。</p>
 
       </div>
       <div class="post-tags-categories">
@@ -441,16 +492,16 @@
         <div class="copyright">
   <ul class="post-copyright">
     <li class="post-copyright-author">
-    <strong>author:  </strong>John Doe</a>
+    <strong>作者:  </strong>王洋</a>
     </li>
     <li class="post-copyright-link">
-    <strong>link:  </strong>
+    <strong>文章链接:  </strong>
     <a href="/2025/11/23/ms_office免费安装配置/【WY-sea】ms_office免费安装配置/" target="_blank" title="MS office 免费安装配置">http://example.com/2025/11/23/ms_office免费安装配置/【WY-sea】ms_office免费安装配置/</a>
     </li>
     <li class="post-copyright-license">
-      <strong>Copyright notice:   </strong>
-      All articles on this website, unless otherwise stated, adopt <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">CC BY-NC-ND 4.0</a>
-      reprint policy. If reproduced, please indicate source!
+      <strong>版权声明:   </strong>
+      本网站所有文章除特别声明外,均采用 <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">CC BY-NC-ND 4.0</a>
+      许可协议。转载请注明出处!
     </li>
   </ul>
 <div>
@@ -473,7 +524,7 @@
     </div>
     <a href="/2025/11/22/%E3%80%90Hexo%E3%80%91test/" class="post-nav-link">
       <div class="title">
-        Next: <i class="fas fa-angle-right"></i>
+        下一篇: <i class="fas fa-angle-right"></i>
         <div class="title-text">【Hexo】test</div>
       </div>
       <!-- <div class="content">
@@ -702,7 +753,7 @@ dashj
   <div class='content'>
     <div class="toc-main">
       <div class="toc-content">
-        <!-- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#MS-office-%E5%85%8D%E8%B4%B9%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE-%EF%BC%88%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E5%AD%A6%EF%BC%81%EF%BC%81%EF%BC%89"><span class="toc-text">MS office 免费安装配置      _ （保姆级教学！！）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80-%E5%AE%89%E8%A3%85%E5%89%8D%E6%B3%A8%E6%84%8F"><span class="toc-text">一.安装前注意</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E9%80%9A%E8%BF%87Geek%E5%8D%B8%E8%BD%BD"><span class="toc-text">1.通过Geek卸载</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%88%91%E4%BB%AC%E5%8F%AF%E4%BB%A5%E7%9B%B4%E6%8E%A5%E5%9C%A8edge%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%8A%E9%9D%A2%E4%B8%8B%E4%B8%80%E4%B8%AA%EF%BC%8C%E5%9B%A0%E4%B8%BA%E4%B8%8B%E8%BD%BD%E8%BF%99%E4%B8%AA%E7%89%B9%E5%88%AB%E5%A5%BD%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7%EF%BC%8C%E6%88%91%E4%BB%AC%E5%B9%B3%E5%B8%B8%E4%BD%BF%E7%94%A8%E7%94%B5%E8%84%91%E4%B9%9F%E4%BC%9A%E7%94%A8%E5%88%B0"><span class="toc-text">我们可以直接在edge浏览器上面下一个，因为下载这个特别好用的工具，我们平常使用电脑也会用到</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E9%80%9A%E8%BF%87%E7%B3%BB%E7%BB%9F%E8%87%AA%E5%B8%A6%E7%9A%84%E5%8D%B8%E8%BD%BD%E5%B7%A5%E5%85%B7%E5%8D%B8%E8%BD%BD"><span class="toc-text">2.通过系统自带的卸载工具卸载</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9C%A8%E7%BB%88%E7%AB%AF%E8%BE%93%E5%85%A5-appwiz-cpl-%E5%91%BD%E4%BB%A4%E5%8D%B3%E5%8F%AF%E8%B0%83%E5%87%BA%E7%B3%BB%E7%BB%9F%E8%87%AA%E5%B8%A6%E7%9A%84%E5%8D%B8%E8%BD%BD%E5%B7%A5%E5%85%B7%E4%BA%86"><span class="toc-text">在终端输入 appwiz.cpl 命令即可调出系统自带的卸载工具了</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B9%9F%E5%8F%AF%E4%BB%A5%E7%9B%B4%E6%8E%A5-win-i-%E6%89%93%E5%BC%80%E8%AE%BE%E7%BD%AE%E7%84%B6%E5%90%8E%E7%82%B9%E5%BC%80%E5%BA%94%E7%94%A8%E5%8E%BB%E5%8D%B8%E8%BD%BD%E4%B9%9F%E6%98%AF%E5%8F%AF%E4%BB%A5%E7%9A%84"><span class="toc-text">也可以直接 win+i 打开设置然后点开应用去卸载也是可以的</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C-%E9%83%A8%E7%BD%B2%E5%B7%A5%E4%BD%9C"><span class="toc-text">二. 部署工作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C%EF%BC%88check-it%EF%BC%89"><span class="toc-text">1.准备工作（check it）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A3%80%E6%9F%A5%E6%88%91%E4%BB%AC%E7%9A%84office%E6%98%AF%E5%90%A6%E5%8D%B8%E8%BD%BD%E5%AE%8C%E5%85%A8"><span class="toc-text">检查我们的office是否卸载完全</span></a></li></ol></li></ol></li></ol></li></ol> -->
+        <!-- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#MS-office-%E5%85%8D%E8%B4%B9%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE-%EF%BC%88%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E5%AD%A6%EF%BC%81%EF%BC%81%EF%BC%89"><span class="toc-text">MS office 免费安装配置      _ （保姆级教学！！）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80-%E5%AE%89%E8%A3%85%E5%89%8D%E6%B3%A8%E6%84%8F"><span class="toc-text">一.安装前注意</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E9%80%9A%E8%BF%87Geek%E5%8D%B8%E8%BD%BD"><span class="toc-text">1.通过Geek卸载</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%88%91%E4%BB%AC%E5%8F%AF%E4%BB%A5%E7%9B%B4%E6%8E%A5%E5%9C%A8edge%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%8A%E9%9D%A2%E4%B8%8B%E4%B8%80%E4%B8%AA%EF%BC%8C%E5%9B%A0%E4%B8%BA%E4%B8%8B%E8%BD%BD%E8%BF%99%E4%B8%AA%E7%89%B9%E5%88%AB%E5%A5%BD%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7%EF%BC%8C%E6%88%91%E4%BB%AC%E5%B9%B3%E5%B8%B8%E4%BD%BF%E7%94%A8%E7%94%B5%E8%84%91%E4%B9%9F%E4%BC%9A%E7%94%A8%E5%88%B0"><span class="toc-text">我们可以直接在edge浏览器上面下一个，因为下载这个特别好用的工具，我们平常使用电脑也会用到</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E9%80%9A%E8%BF%87%E7%B3%BB%E7%BB%9F%E8%87%AA%E5%B8%A6%E7%9A%84%E5%8D%B8%E8%BD%BD%E5%B7%A5%E5%85%B7%E5%8D%B8%E8%BD%BD"><span class="toc-text">2.通过系统自带的卸载工具卸载</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9C%A8%E7%BB%88%E7%AB%AF%E8%BE%93%E5%85%A5-appwiz-cpl-%E5%91%BD%E4%BB%A4%E5%8D%B3%E5%8F%AF%E8%B0%83%E5%87%BA%E7%B3%BB%E7%BB%9F%E8%87%AA%E5%B8%A6%E7%9A%84%E5%8D%B8%E8%BD%BD%E5%B7%A5%E5%85%B7%E4%BA%86"><span class="toc-text">在终端输入 appwiz.cpl 命令即可调出系统自带的卸载工具了</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B9%9F%E5%8F%AF%E4%BB%A5%E7%9B%B4%E6%8E%A5-win-i-%E6%89%93%E5%BC%80%E8%AE%BE%E7%BD%AE%E7%84%B6%E5%90%8E%E7%82%B9%E5%BC%80%E5%BA%94%E7%94%A8%E5%8E%BB%E5%8D%B8%E8%BD%BD%E4%B9%9F%E6%98%AF%E5%8F%AF%E4%BB%A5%E7%9A%84"><span class="toc-text">也可以直接 win+i 打开设置然后点开应用去卸载也是可以的</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C-%E9%83%A8%E7%BD%B2%E5%B7%A5%E4%BD%9C"><span class="toc-text">二. 部署工作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C%EF%BC%88check-it%EF%BC%89"><span class="toc-text">1.准备工作（check it）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A3%80%E6%9F%A5%E6%88%91%E4%BB%AC%E7%9A%84office%E6%98%AF%E5%90%A6%E5%8D%B8%E8%BD%BD%E5%AE%8C%E5%85%A8"><span class="toc-text">检查我们的office是否卸载完全</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A3%80%E6%9F%A5%E5%AE%8C%E6%AF%95%E5%8D%B8%E8%BD%BD%E5%AE%8C%E5%85%A8%E8%BF%9B%E8%A1%8C%E4%BB%A5%E4%B8%8B%E6%AD%A5%E9%AA%A4"><span class="toc-text">检查完毕卸载完全进行以下步骤</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E5%9C%A8%E5%BE%AE%E8%BD%AF%E5%AE%98%E7%BD%91%E4%B8%8A%E4%B8%8B%E8%BD%BD%E9%83%A8%E7%BD%B2%E5%B7%A5%E5%85%B7"><span class="toc-text">1.在微软官网上下载部署工具</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-%E5%9C%A8%E6%A1%8C%E9%9D%A2%E4%B8%8A%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E6%96%87%E4%BB%B6%E5%A4%B9%EF%BC%8C%E5%91%BD%E5%90%8D%E4%B8%BAoffice%EF%BC%8C%E4%BD%BF%E7%94%A8%E9%83%A8%E7%BD%B2%E5%B7%A5%E5%85%B7%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6%EF%BC%8C%E9%80%89%E6%8B%A9%E6%96%B0%E5%BB%BA%E7%9A%84%E6%96%87%E4%BB%B6%E5%A4%B9%E5%B0%86%E9%83%A8%E7%BD%B2%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD%E5%88%B0%E8%AF%A5%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%AD"><span class="toc-text">2.在桌面上创建一个文件夹，命名为office，使用部署工具下载文件，选择新建的文件夹将部署文件下载到该文件夹中</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-%E4%BD%BF%E7%94%A8%E5%BE%AE%E8%BD%AFoffice%E8%87%AA%E5%AE%9A%E4%B9%89%E5%B7%A5%E5%85%B7"><span class="toc-text">3.使用微软office自定义工具</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%A8%E6%84%8F"><span class="toc-text">注意:</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#4-%E5%B0%86%E6%96%87%E4%BB%B6%E5%A4%B9%E7%9A%84%E8%B7%AF%E5%BE%84%E5%A4%8D%E5%88%B6%E4%BD%BF%E7%94%A8%E7%AE%A1%E7%90%86%E5%91%98%E8%BA%AB%E4%BB%BD%E8%BF%9B%E5%85%A5%E7%BB%88%E7%AB%AF%EF%BC%88cmd%EF%BC%89%E4%BD%BF%E7%94%A8cd%E8%BF%9B%E8%A1%8C%E8%AE%BF%E9%97%AE%EF%BC%8C%E7%84%B6%E5%90%8E"><span class="toc-text">4.将文件夹的路径复制使用管理员身份进入终端（cmd）使用cd进行访问，然后</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%A8%E6%84%8F-1"><span class="toc-text">注意</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%A8%E6%84%8F%EF%BC%81"><span class="toc-text">注意！</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E6%9C%80%E5%90%8E%E4%B8%80%E6%AD%A5"><span class="toc-text">三、最后一步</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%99%84%E8%A8%80%EF%BC%9A"><span class="toc-text">附言：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%EF%BC%81%EF%BC%81%EF%BC%81%E6%9C%80%E9%87%8D%E8%A6%81%E7%9A%84%E5%99%A2%EF%BC%8C%E9%85%8D%E7%BD%AE%E5%AE%8C%E6%88%90%E4%B9%8B%E5%90%8E%EF%BC%8C%E5%8F%AF%E4%BB%A5%E6%8A%8A%E6%A1%8C%E9%9D%A2%E4%B8%8A%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E5%88%A0%E6%8E%89%E4%BA%86%E5%93%A6%EF%BC%8C%E4%B8%8B%E6%AC%A1%E7%94%A8%E7%9A%84%E8%AF%9D%E5%86%8D%E6%AC%A1%E7%9C%8B%E6%95%99%E7%A8%8B%E9%87%8D%E6%96%B0%E4%B8%8B%E5%B0%B1%E8%A1%8C%E5%92%AF%EF%BC%8C%E4%B8%8D%E4%BC%9A%E5%BD%B1%E5%93%8D%E6%AD%A3%E5%B8%B8%E4%BD%BF%E7%94%A8"><span class="toc-text">！！！最重要的噢，配置完成之后，可以把桌面上的配置文件删掉了哦，下次用的话再次看教程重新下就行咯，不会影响正常使用</span></a></li></ol> -->
         <div class="toc"></div>
       </div>
     </div>
@@ -1568,7 +1619,7 @@ dashj
       },
       mounted() {
         const that = this;
-        var copy = 'copy';
+        var copy = '复制';
         /* code */
         var initCopyCode = function () {
           var copyHtml = '';
