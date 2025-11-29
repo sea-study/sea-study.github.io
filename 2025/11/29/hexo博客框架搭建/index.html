@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WangYang&#39;s Blog</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="王洋">
+<!-- <link rel="stylesheet" href="/css/style.css"> -->
+<!-- <link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/style_post.css">
+<link rel="stylesheet" href="/css/style_header.css">
+<link rel="stylesheet" href="/css/style_sidebar.css">
+<link rel="stylesheet" href="/css/style_archives.css">
+<link rel="stylesheet" href="/css/style_index_post.css"> -->
+
+<!-- <link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/style_post.css">
+<link rel="stylesheet" href="/css/style_header.css">
+<link rel="stylesheet" href="/css/style_sidebar.css">
+<link rel="stylesheet" href="/css/style_archives.css">
+<link rel="stylesheet" href="/css/style_index_post.css"> -->
+<link rel="stylesheet" href="/css/main.css">
+<meta name="generator" content="Hexo 7.3.0"></head>
+<body>
+  
+
+  <header>
+  <div class="header-content">
+    <img src="http://example.com/images/2.png" alt="Logo" class="logo">
+    <h1><a href="http://example.com">崴寶 Weibert Weiberson Template<br/></a></h1>
+    <img src="http://example.com/images/0.gif" alt="Logo2" class="logo2">
+
+    <!-- 在 nav 中包裹選單 -->
+    <nav class="mobile-nav">
+      <ul class="nav-top">
+        <li><a href="http://example.com/">首頁</a></li>
+        <li><a href="http://example.com/about">關於</a></li>
+        <li><a href="http://example.com/archives">檔案</a></li>
+        <li><a id="tag_toggleButton">標籤&類別</a></li>
+        <li class="dropdown">
+          <a class="menu-button">跟隨我</a>
+          <div class="nav-menu">
+            <div class="menu-content">
+              <a target="_blank" rel="noopener" href="https://github.com/weitsung50110">
+                <img src="http://example.com/images/github.png" alt="GitHub" class="dropdown_social-icon">
+                GitHub</a>
+              <a target="_blank" rel="noopener" href="https://medium.com/@weiberson">
+                <img src="http://example.com/images/medium.png" alt="Medium" class="dropdown_social-icon">
+                Medium</a>
+              <a target="_blank" rel="noopener" href="https://www.instagram.com/weiberson_blog/">
+                <img src="http://example.com/images/ig.png" alt="Instagram" class="dropdown_social-icon">
+                IG</a>
+              <a target="_blank" rel="noopener" href="https://weitsung50110.github.io/">崴寶 Weibert Weiberson</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <!-- 搜尋框 -->
+      <ul class="nav-bottom">
+        <li>
+          <div id="search-container">
+            <input type="text" id="search-input" placeholder="搜尋文章..." />
+            <button id="search-button">搜尋</button>
+            
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- 在 header 中添加漢堡選單 -->
+  <button class="menu-toggle" aria-label="Toggle Navigation">
+    ☰
+  </button>
+  
+  <div id="press_show_cute"></div>
+</header>
+
+  
+  <div id="container">
+    <div id="search-modal" class="search-modal">
+  <div class="search-modal-content">
+    <h3>搜尋結果</h3>
+    <span id="search-close" class="search-close">&times;</span>
+    <div id="search-results"></div>
+  </div>
+</div>
+    
+  
+    <article class="post">
+  <h1>【Hexo】快速搭建博客</h1>
+  <!-- <p class="post-date">日期：Sat Nov 29 2025 00:00:00 GMT+0800</p> -->
+  <p class="post-date">日期：2025-11-29 00:00:00</p>
+  <p class="post-author">作者：</p>
+  
+  
+
+  <!-- 目錄容器 -->
+  <div class="article-container">
+    <div class="article-content">
+      <h1 id="使用【Hexo】快速搭建博客"><a href="#使用【Hexo】快速搭建博客" class="headerlink" title="使用【Hexo】快速搭建博客"></a>使用【Hexo】快速搭建博客</h1><ul>
+<li><strong>说明(简述)：</strong> </li>
+<li>我们部署主要需要<strong>git,  github , hexo , node.js，cloudflare</strong></li>
+</ul>
+<h2 id="一、所需工具的-检查-安装"><a href="#一、所需工具的-检查-安装" class="headerlink" title="一、所需工具的 - 检查 &#x2F; 安装"></a>一、所需工具的 - 检查 &#x2F; 安装</h2><h3 id="先检查一下所需到底有没有安装过，再进行安装"><a href="#先检查一下所需到底有没有安装过，再进行安装" class="headerlink" title="先检查一下所需到底有没有安装过，再进行安装"></a><strong>先检查一下所需到底有没有安装过，再进行安装</strong></h3><h4 id="如下图所示"><a href="#如下图所示" class="headerlink" title="如下图所示:"></a>如下图所示:</h4><blockquote>
+<p>命令:<br><code>node -v</code><br><code>npm -v</code><br><code>git -v</code><br><img src="/../hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA/%E6%A3%80%E6%9F%A5%E6%98%AF%E5%90%A6%E5%AE%89%E8%A3%85.png" alt="test"></p>
+</blockquote>
+<h5 id="查看是否已经安装过了，如果没有安装过，就看下面，如果已经安装直接检查git配置就行"><a href="#查看是否已经安装过了，如果没有安装过，就看下面，如果已经安装直接检查git配置就行" class="headerlink" title="查看是否已经安装过了，如果没有安装过，就看下面，如果已经安装直接检查git配置就行"></a>查看是否已经安装过了，如果没有安装过，就看下面，如果已经安装直接<a href="#%E9%85%8D%E7%BD%AE-git">检查git配置</a>就行</h5><h4 id="git-安装地址"><a href="#git-安装地址" class="headerlink" title="git 安装地址"></a>git 安装地址</h4><blockquote>
+<p><a target="_blank" rel="noopener" href="https://git-scm.com/">https://git-scm.com/</a></p>
+</blockquote>
+<h4 id="node-js-安装地址"><a href="#node-js-安装地址" class="headerlink" title="node.js  安装地址"></a>node.js  安装地址</h4><blockquote>
+<p><a target="_blank" rel="noopener" href="https://nodejs.org/">https://nodejs.org/</a>  </p>
+</blockquote>
+<h5 id="注意：安装完之后为了保险起见，我们仍旧应该检查一遍是否安装成功，重启终端之后再输入-检查版本的命令"><a href="#注意：安装完之后为了保险起见，我们仍旧应该检查一遍是否安装成功，重启终端之后再输入-检查版本的命令" class="headerlink" title="注意：安装完之后为了保险起见，我们仍旧应该检查一遍是否安装成功，重启终端之后再输入 检查版本的命令"></a>注意：安装完之后为了保险起见，我们仍旧应该检查一遍是否安装成功，重启终端之后再输入 <a href="#%E4%B8%80%E6%89%80%E9%9C%80%E5%B7%A5%E5%85%B7%E7%9A%84---%E6%A3%80%E6%9F%A5--%E5%AE%89%E8%A3%85">检查版本的命令</a></h5><p>如果有版本号了，就证明成功了</p>
+<h4 id="配置-Git"><a href="#配置-Git" class="headerlink" title="配置 Git"></a>配置 Git</h4><p><code>git config --global user.name &quot;你的GitHub用户名&quot;</code><br><code> git config --global user.email &quot;你的GitHub注册邮箱&quot;</code><br><strong>设置完</strong>可以输入<code>git config --global --list</code>检查是否配置成功</p>
+<p><img src="/../hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA/git%E9%85%8D%E7%BD%AE.png" alt="git配置"></p>
+<h5 id="说明：这里我的user-name和我的github是不一样的，这就相当于寄快递，只要是我的注册邮箱-地址-是正确的就行，不影响部署，但建议保持一致"><a href="#说明：这里我的user-name和我的github是不一样的，这就相当于寄快递，只要是我的注册邮箱-地址-是正确的就行，不影响部署，但建议保持一致" class="headerlink" title="说明：这里我的user.name和我的github是不一样的，这就相当于寄快递，只要是我的注册邮箱(地址)是正确的就行，不影响部署，但建议保持一致"></a>说明：这里我的<strong>user.name</strong>和我的<strong>github</strong>是<strong>不一样</strong>的，这就相当于<strong>寄快递</strong>，只要是我的<strong>注册邮箱(地址)是正确</strong>的就行，<strong>不影响部署，但建议保持一致</strong></h5><h4 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">安装Hexo</a></h4><blockquote>
+<p>点一下 “安装Hexo”就可以进入Hexo的官网了<br><img src="/../hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA/%E5%AE%98%E7%BD%91hexo.png" alt="hexo官网"></p>
+</blockquote>
+<h4 id="点开官网就可以看到许多命令了，安装命令是直接可以在终端里面输-npm-install-g-hexo-cli-（这个命令一进官网就有）"><a href="#点开官网就可以看到许多命令了，安装命令是直接可以在终端里面输-npm-install-g-hexo-cli-（这个命令一进官网就有）" class="headerlink" title="点开官网就可以看到许多命令了，安装命令是直接可以在终端里面输 npm install -g hexo-cli （这个命令一进官网就有）"></a>点开官网就可以看到许多命令了，安装命令是直接可以在终端里面输 <code>npm install -g hexo-cli</code> （这个命令一进官网就有）</h4><ul>
+<li><blockquote>
+<p>这里扩展一下，<strong>npm 是node的一个包管理器</strong>，下完node.js 自己会有npm命令，想深究可以自己去搜一下</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="二、创建博客项目"><a href="#二、创建博客项目" class="headerlink" title="二、创建博客项目"></a>二、创建博客项目</h2><h3 id="建个文件夹存放我们所需项目"><a href="#建个文件夹存放我们所需项目" class="headerlink" title="建个文件夹存放我们所需项目"></a>建个文件夹存放我们所需项目</h3><h4 id="这里我演示的文件夹叫做-Hexo-show-teach"><a href="#这里我演示的文件夹叫做-Hexo-show-teach" class="headerlink" title="这里我演示的文件夹叫做 Hexo_show_teach"></a>这里我演示的文件夹叫做 Hexo_show_teach</h4><p><img src="/../hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA/%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9%E7%9A%84%E9%A1%B9%E7%9B%AE.png" alt="new_folder"></p>
+<h4 id="我们可以直接在目录那里输入cmd进入终端"><a href="#我们可以直接在目录那里输入cmd进入终端" class="headerlink" title="我们可以直接在目录那里输入cmd进入终端"></a>我们可以直接在目录那里输入cmd进入终端</h4><blockquote>
+<p>然后回到此文件夹的上一级目录 <code>cd ..</code><br>再进行初始化命令<br><code>hexo init Hexo_show_teach </code><br>Hexo_show_teach(替换你自己想初始化的文件夹的名称)<br><img src="/../hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA/%E5%88%9D%E5%A7%8B%E5%8C%96%E5%AE%8C%E6%88%90%E4%B9%8B%E5%90%8E.png" alt="配置完成之后"></p>
+</blockquote>
+<p><strong>说明</strong>：上面在终端的命令当然也可以在vscode里面的终端运行，两者运行都一样，后面的很多命令建议打开vscode,在里面的终端进行运行<br><img src="/../hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA/%E5%88%9D%E5%A7%8B%E5%8C%96.png" alt="vscode内的init"><br>![]</p>
+<h5 id="配置完成之后我们会发现我们原来空荡荡的文件夹现在变得满满当当"><a href="#配置完成之后我们会发现我们原来空荡荡的文件夹现在变得满满当当" class="headerlink" title="配置完成之后我们会发现我们原来空荡荡的文件夹现在变得满满当当"></a>配置完成之后我们会发现我们原来空荡荡的文件夹现在变得满满当当</h5><p>文件说明：</p>
+<blockquote>
+<p>Hexo_show_teach<br>├── _config.yml       # 网站的 <strong>主配置文件</strong>，非常重&gt; 要！<br>├── source            # <strong>存放</strong>你的文章和页面<br>│   └── _posts        # 你的博客文章都放在这里<br>├── themes            # 存放<strong>主题</strong>的地方<br>├── scaffolds         # <strong>模板</strong>文件夹<br>├── public            # 存放生成的静态文件(我们现在还没生成)<br>└── package.json      # 应用程序的信息和依赖</p>
+</blockquote>
+<h5 id="看完上面的这个文件分布图，我们呢Hexo的这个基本框架就算创建好了"><a href="#看完上面的这个文件分布图，我们呢Hexo的这个基本框架就算创建好了" class="headerlink" title="看完上面的这个文件分布图，我们呢Hexo的这个基本框架就算创建好了"></a>看完上面的这个文件分布图，我们呢Hexo的这个基本框架就算创建好了</h5><h2 id="三、本地预览"><a href="#三、本地预览" class="headerlink" title="三、本地预览"></a>三、本地预览</h2><h3 id="1-通过命令hexo-s（hexo-server的简写）即可进行预览"><a href="#1-通过命令hexo-s（hexo-server的简写）即可进行预览" class="headerlink" title="1.通过命令hexo s（hexo server的简写）即可进行预览"></a>1.通过命令<code>hexo s</code>（hexo server的简写）即可进行预览</h3><p><strong>如果出现如图下这种错误，大概率是默认的配置文件的ESM 与 CJS 模块系统不兼容，如果没有错误我们就可以进行<a href="#2%E6%88%91%E4%BB%AC%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2">写博客</a>的操作了</strong><br><img src="/../hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E9%94%99%E8%AF%AF.png" alt="error_info"></p>
+<blockquote>
+<p>这时候我们打开文件<code>package.json</code>我们可以看到我们应用程序的信息和依赖，问题就出在<code>strip-ansi</code>的版本不兼容。</p>
+<p>我们打开这个文件之后，全删掉，将下面我修改过后的粘贴进去就行<br>{<br>  “name”: “hexo-site”,<br>  “version”: “0.0.0”,<br>  “private”: true,<br>  “scripts”: {<br>    “build”: “hexo generate”,<br>    “clean”: “hexo clean”,<br>    “deploy”: “hexo deploy”,<br>    “server”: “hexo server”<br>  },<br>  “hexo”: {<br>    “version”: “7.3.0”<br>  },<br>  “dependencies”: {<br>    “hexo”: “^7.0.0”,<br>    “hexo-deployer-git”: “^4.0.0”,<br>    “hexo-generator-archive”: “^2.0.0”,<br>    “hexo-generator-category”: “^2.0.0”,<br>    “hexo-generator-index”: “^3.0.0”,<br>    “hexo-generator-tag”: “^2.0.0”,<br>    “hexo-renderer-ejs”: “^2.0.0”,<br>    “hexo-renderer-marked”: “^6.0.0”,<br>    “hexo-renderer-stylus”: “^3.0.0”,<br>    “hexo-server”: “^3.0.0”,<br>    “hexo-theme-landscape”: “^1.0.0”<br>  }<br>}</p>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>粘贴完之后 输入命令：<br><code>rm -r -fo node_modules</code>（删除旧依赖）<br><code>rm -fo package-lock.json</code><br><code>npm i</code>(安装依赖)</p>
+</blockquote>
+<p><strong>这里我写的都是简写的命令</strong></p>
+</blockquote>
+<p>然后再运行 <code>hexo s</code>就可以本地运行了</p>
+<p><code>ctrl + c</code>中止</p>
+<h3 id="2-我们的第一个博客"><a href="#2-我们的第一个博客" class="headerlink" title="2.我们的第一个博客"></a>2.我们的第一个博客</h3><p><strong>我们可以通过直接在路径 source&#x2F;_posts 下新建一个.md文件，也可以在终端中输入命令</strong><code>hexo new </code><strong>后面接上我们的项目名</strong><br><img src="/../hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA/%E6%96%B0%E5%BB%BA%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2.png" alt="myfirstblog"></p>
+<h2 id="设置主题"><a href="#设置主题" class="headerlink" title="* 设置主题"></a>* 设置主题</h2><h3 id="我们可以去官网找我们喜欢的主题并设置"><a href="#我们可以去官网找我们喜欢的主题并设置" class="headerlink" title="我们可以去官网找我们喜欢的主题并设置"></a>我们可以去<a target="_blank" rel="noopener" href="https://hexo.io/themes/">官网</a>找我们喜欢的主题并设置</h3><p><img src="/../hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA/%E4%B8%BB%E9%A2%98%E5%8D%9A%E5%AE%A2%E6%89%80%E5%9C%A8.png" alt="themes_guanf"></p>
+<blockquote>
+<p><strong>选择一个我们喜欢的点进去</strong></p>
+</blockquote>
+<pre><code>进入这个界面之后复制一下这个网页的 url 就行
+</code></pre>
+<p><img src="/../hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA/%E6%89%BE%E5%88%B0%E6%89%80%E5%96%9C%E6%AC%A2%E7%9A%84%E4%B8%BB%E9%A2%98.png" alt="找到喜欢的主题"></p>
+<pre><code>当然，也可以直接看这个下面的readme，一般都会有说明
+</code></pre>
+<blockquote>
+<p>复制完的网址 通过使用 git <code>git clone </code>命令下载到themes目录下的主题名的文件夹下(这个目录下面)<br>所以完整命令应该是<br><code> git clone https://github.com/raytaylorlin/hexo-theme-raytaylorism.git themes/raytaylorism</code></p>
+</blockquote>
+<blockquote>
+<p>然后不能忘记在_config.xml里面修改主题噢</p>
+</blockquote>
+<p><img src="/../hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA/%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE.png" alt="主题配置"></p>
+<blockquote>
+<p>修改完成之后,保存一下 <code>hexo clean </code> <code>hexo g</code> <code>hexo s</code>就可以查看了，这三个命令我们以后写，会经常用到</p>
+<p>  <code>hexo clean</code>是清理旧文件(会有很多莫名其妙的问题)<br>通过这个命令清理旧文件就会少很多问题，也可以更新<br>  <code>hexo g</code>是将我们的.md文件生成为静态网站<br>  <code>hexo s</code>就是本地预览了</p>
+</blockquote>
+<h4 id="下面这就是配置完主题之后的样子了，刚才我选的比较简洁了"><a href="#下面这就是配置完主题之后的样子了，刚才我选的比较简洁了" class="headerlink" title="下面这就是配置完主题之后的样子了，刚才我选的比较简洁了"></a>下面这就是配置完主题之后的样子了，刚才我选的比较简洁了</h4><p><img src="/../hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA/%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E5%AE%8C%E5%B1%95%E7%A4%BA.png" alt="主题配置完展示"></p>
+<h2 id="四、部署到-GitHub-Pages"><a href="#四、部署到-GitHub-Pages" class="headerlink" title="四、部署到 GitHub Pages"></a>四、部署到 GitHub Pages</h2><h3 id="这是最后一步，让我们的博客可以被全世界看到"><a href="#这是最后一步，让我们的博客可以被全世界看到" class="headerlink" title="这是最后一步，让我们的博客可以被全世界看到"></a>这是最后一步，让我们的博客可以被全世界看到</h3><h4 id="新建库"><a href="#新建库" class="headerlink" title="新建库"></a>新建库</h4><blockquote>
+<p><strong>打开我们的github,登录之后点上面的新建</strong><br><img src="/../hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA/new_repository.png" alt="github创建"></p>
+</blockquote>
+<blockquote>
+<p><strong>新建进去之后，注意命名规范和选择Public</strong></p>
+</blockquote>
+<p><img src="/../hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA/Create_repository.png" alt="新建配置"></p>
+<h4 id="安装部署插件"><a href="#安装部署插件" class="headerlink" title="安装部署插件"></a>安装部署插件</h4><p><strong>在博客根目录，安装 hexo-deployer-git</strong><br>    <code>npm install hexo-deployer-git --save</code> </p>
+<blockquote>
+<p>部署完成之后再打开我们的_config.xml主文件，到最下面找到deploy进行下图这样的配置</p>
+<p><img src="/../hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA/%E9%83%A8%E7%BD%B2%E5%88%B0GitHub%E4%B8%8A%E5%89%8D.png" alt="deploy配置"></p>
+</blockquote>
+<blockquote>
+<p>配置完成之后<br>使用依次三条命令<br><strong><code>hexo clean</code></strong><br><strong><code>hexo generate</code></strong><br><strong><code>hexo deploy</code></strong></p>
+</blockquote>
+<blockquote>
+<p>输入完成之后就如下图一样了，我们创的github库里面就有我们的文件了<br><img src="/../hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA/%E9%83%A8%E7%BD%B2%E5%AE%8C%E6%88%90%E4%B9%8B%E5%90%8E.png" alt="部署完成"></p>
+</blockquote>
+<blockquote>
+<p>这样我们就已经马上完成了，我们就可以直接访问<br><strong>我们用户名+github.io</strong><br><img src="/../hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA/%E5%9F%9F%E5%90%8D%E8%AE%BF%E9%97%AE.png" alt="alt"></p>
+</blockquote>
+<blockquote>
+<p>我们先不访问，先回来建了一个这个新的<br>然后依旧输入**<code>hexo clean</code>**<br><strong><code>hexo generate</code></strong><br><strong><code>hexo deploy</code></strong><br>这三条命令</p>
+</blockquote>
+<p><img src="/../hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA/%E8%AE%BE%E7%BD%AE%E4%B8%80%E4%B8%AA%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2.png" alt="马上完成的设置第一个博客"></p>
+<p><img src="/../hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA/%E5%AE%8C%E6%88%90%E4%BB%A5%E5%90%8E.png" alt="完成"></p>
+<blockquote>
+<p><strong>这样就ok了，最后这张是我在我自己的博客上放的，因为对于域名的话GitHub是只给每个用户一个免费的域名的</strong></p>
+<p>就是<strong>我们用户名+github.io</strong>，我没买其他的域名，所以只用这个我免费的域名给大家展示了</p>
+</blockquote>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
+<li><p><strong>Node.js</strong>是运行JavaScript的环境,如果没有它，就无法安装和运行Hexo</p>
+</li>
+<li><p><strong>Git</strong> 是让我们的博客可以部署到GitHub Pages， 还有，Hexo主题都是通过Git从GitHub上下载的</p>
+</li>
+<li><p><strong>Hexo</strong> 那就不用说了，我这篇文章就是用Markdown格式写的，最后展现给你的是网页的形式，所以它可以通过.md文件快速生成静态网站</p>
+</li>
+</ul>
+<h1 id="注："><a href="#注：" class="headerlink" title="注："></a>注：</h1><pre><code>在操作的过程当中，我们会有很多简单的
+windows 系统 win + v 可以看我们的剪切板
+</code></pre>
+
+    </div>
+    <div id="toc" class="toc">
+      <ul></ul>
+    </div>
+  </div>
+  
+  <button id="toc-toggle-btn" class="toc-toggle-btn">📖</button>
+
+  <script>
+      
+  </script>
+</article>
+ 
+    
+  </div>
+  
+  <!-- 側邊欄 -->
+<div id="sidebar">
+  <button id="close-btn">&times;</button>
+  <div class="author-info">
+    <div class="info-wrapper">
+      <div class="social-icons">
+        <a href="https://github.com/weitsung50110" target="_blank">
+          <img src="http://example.com/images/github.png" alt="GitHub" class="social-icon">
+        </a>
+        <a href="https://medium.com/@weiberson" target="_blank">
+          <img src="http://example.com/images/medium.png" alt="Medium" class="social-icon">
+        </a>
+        <a href="https://www.instagram.com/weiberson_blog/" target="_blank">
+          <img src="http://example.com/images/ig.png" alt="Instagram" class="social-icon">
+        </a>
+      </div>
+      <img src="http://example.com/images/a2.jpg" alt="作者照片" class="author_photo">
+    </div>
+    <h2>崴寶</h2>
+    <p>(Weibert Weiberson)</p>
+    <span>Master of Computer Science / AI Software Engineer</span>
+    <div class="About">
+      <a target="_blank" rel="noopener" href="https://weitsung50110.github.io/">崴寶 Weibert Weiberson</a>
+    </div>
+  </div>
+</div>
+<button id="open-btn">🤗</button>
+  <!-- 彈跳視窗容器 -->
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <span class="close" id="closeButton">&times;</span>
+    <div class="modal-sections">
+      <div class="social-links-section">
+        <h3>跟隨我</h3>
+        <div class="social-links">
+          <a href="https://github.com/weitsung50110" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+          <a href="https://medium.com/@weiberson" target="_blank"><i class="fab fa-medium"></i>Medium</a>
+          <a href="https://www.instagram.com/weiberson_blog/" target="_blank"><i class="fab fa-Instagram"></i>IG</a>
+          <a target="_blank" rel="noopener" href="https://weitsung50110.github.io/">崴寶 Weibert Weiberson</a>
+        </div>
+      </div>
+
+      
+
+      
+    </div>
+  </div>
+</div>
+
+  <footer>
+  <p>&copy; 2025 崴寶 Weibert Weiberson. All rights reserved.</p>
+  <!-- <script src="/js/main.js"></script> -->
+  <!-- <script src="/js/script.js"></script> -->
+  <script src="/js/script.js"></script>
+  <script src="/js/popup_tag.js"></script>
+  <script src="/js/search.js"></script>
+  <script src="/js/sidebar.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/post.js"></script>  
+  
+</footer>
+
+</body>
+</html>
+<!-- 返回頂部按鈕 -->
+<button id="scroll-to-top-btn" class="scroll-to-top-btn">▲</button>

@@ -1,0 +1,108 @@
+/* 整體文章區域 */
+.posts-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 自适应列数 */
+  gap: 20px; /* 文章之间的间距 */
+}
+
+/* 每篇文章的樣式 */
+.index_post {
+  font-family: 'Arial', sans-serif;
+  color: #5b3d8a; /* 可爱紫色 */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff; /* 粉红色背景 */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 鼠標懸停效果 */
+.index_post:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* 標題樣式 */
+.index_post h2 {
+  font-size: 1.5em;
+  color: #515fd7; /* 西红柿红 */
+  text-align: center;
+  background-color: #f3faff; /* 柔和的奶油色背景 */
+  padding: 10px; /* rgb(244, 255, 243)/
+  border-radius: 5px; /* 圆角边框 */
+}
+
+.index_post h2 {
+  color: #ff6f61; /* 橙色 */
+  text-decoration: none;
+  transition: color 0.1s ease;
+}
+
+.index_post h2:hover {
+  color: #ff1493; /* 热情粉红 */
+  background-color: #fff4f3; /* 粉红色背景 */
+}
+
+/* 文章信息區 */
+.index_post p {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.index_post .post-date, .index_post .post-author {
+  font-style: italic;
+  color: #e64c99; /* 热情粉红 */
+}
+
+/* 摘要區 */
+.index_post .excerpt {
+  color: #8b4513; /* 棕色 */
+  line-height: 1.8;
+  text-align: center;
+}
+
+.index_post .excerpt:hover {
+  color: #000000; /* 黑色 */
+  background-color: #fffacd; /* 柠檬薄雾色 */
+}
+
+/* 讀更多連結 */
+.index_post .read-more {
+  display: block;
+  text-align: center;
+  font-size: 1em;
+  color: #217ac2; /* 深天蓝 */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.index_post .read-more:hover {
+  text-decoration: underline;
+  background-color: #ffe4e1; /* 粉红色背景 */
+}
+
+/* post-count 樣式 */
+.post-count {
+  color: #fffee5; /* 設定字體顏色 */
+  text-align: center; /* 文字置中 */
+}
+
+.post-tags,
+.post-categories {
+  display: flex;
+  flex-wrap: wrap; /* 允許換行 */
+  margin: 10px 0; /* 加一些外邊距 */
+}
+
+.post-tags ul {
+  display: flex; /* 使用 flexbox */
+  flex-wrap: wrap; /* 允許換行 */
+  padding: 0; /* 去掉預設內邊距 */
+  margin: 0; /* 去掉預設外邊距 */
+}
+
+.post-tags span,
+.post-categories span {
+  margin-right: 5px; /* 標籤或類別名稱與項目之間的間距 */
+  font-weight: bold; /* 可以加粗字體 */
+}

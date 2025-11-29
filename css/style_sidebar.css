@@ -1,0 +1,155 @@
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* 初始位置在屏幕外 */
+  width: 250px;
+  height: 100%;
+  background-color: rgba(8, 22, 57, 0.694);
+  color: white;
+  transition: all 0.3s ease; /* 讓動畫變化平滑 */
+  padding-top: 10px;
+  z-index: 1000; /* 確保側邊欄在最上層 */
+  overflow-y: auto; /* 垂直方向顯示滾動條 */
+  overflow-x: hidden; /* 水平方向不顯示滾動條 */
+}
+
+/* 基本滾動條樣式 */
+#sidebar::-webkit-scrollbar {
+  width: 12px; /* 設定滾動條寬度 */
+}
+
+#sidebar::-webkit-scrollbar-track {
+  background: #2c2c2c; /* 滾動條背景顏色 */
+  border-radius: 10px; /* 滾動條背景圓角 */
+}
+
+#sidebar::-webkit-scrollbar-thumb {
+  background: #555; /* 滾動條滑塊顏色 */
+  border-radius: 10px; /* 滾動條滑塊圓角 */
+  border: 3px solid #333; /* 滾動條滑塊邊框 */
+}
+
+#sidebar::-webkit-scrollbar-thumb:hover {
+  background: #888; /* 滾動條滑塊懸停顏色 */
+}
+
+
+.author-info span {
+  display: block; /* 使 span 元素顯示為區塊級元素，以便換行 */
+}
+
+#sidebar .author-info .About a {
+  text-decoration: none;
+  background: #f9f5fb;
+  color: #cd6000;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background 0.1s, color 0.1s;
+}
+
+#sidebar .author-info .About a:hover{
+  background: #f7e4fc;
+  color: #633000;
+}
+
+#sidebar h2 {
+  margin-top: 0;
+  line-height: 1.0; /* 設定合適的行高，根據需要調整 */
+
+}
+
+#sidebar #close-btn {
+  position: absolute; /* 使用絕對定位 */
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  top: 2px; /* 距離頂部20px */
+  right: 10px; /* 距離右邊20px */
+}
+
+#sidebar #close-btn:hover {
+  background:#633000;
+  color: rgb(255, 232, 249);
+}
+
+/* 作者信息樣式 */
+.author-info {
+  text-align: center; /* 圖片和文字居中 */
+}
+
+.author_photo {
+  width: 150px; /* 設置圖片寬度 */
+  height: 150px; /* 設置圖片高度 */
+  border-radius: 50%; /* 圓形圖片 */
+  object-fit: cover; /* 確保圖片不變形 */
+  /* margin-bottom: 15px; 圖片和文字之間的間距 */
+}
+
+body{
+  transition: margin-left 0.3s ease; /* 讓主內容區域的移動平滑 */
+  /* padding: 20px; */
+}
+
+
+
+
+/* 固定在網頁左邊中間的按鈕 */
+#open-btn {
+  position: fixed; /* 固定定位 */
+  left: 2px; /* 距離左邊 20 像素，根據需求調整 */
+  bottom: -15px; /* 垂直中心對齊 */
+  transform: translateY(-50%); /* 垂直居中對齊 */
+  background-color: rgba(0, 0, 0, 0.07);
+  color: #000000; /* 按鈕文字顏色 */
+  border: 1px dashed  #a513a1; /* 設置邊框樣式和顏色 */
+  padding: 3px 3px; /* 內邊距 */
+  border-radius: 35px; /* 圓角 */
+  cursor: pointer; /* 滑鼠懸停時顯示手形 */
+  font-size: 16px; /* 字體大小 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 陰影 */
+  z-index: 999;
+  width: 60px; /* 設置按鈕寬度 */
+  height: 60px; /* 設置按鈕高度 */
+}
+
+#open-btn:hover {
+  background-color: #daf6fa; /* 滑鼠懸停時的顏色變化 */
+}
+
+
+
+
+
+.info-wrapper {
+  display: flex; /* 使用彈性布局 */
+  align-items: center; /* 垂直居中對齊 */
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column; /* 垂直排列 */
+  margin-right: 10px; /* 右側間距 */
+}
+
+.social-icon {
+  width: 43.5px; /* 圖標寬度 */
+  height: 33px; /* 圖標高度 */
+  margin: 5px 0; /* 垂直間距 */
+  border-radius: 50%; /* 圓形背景 */
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s; /* 鼠標懸停效果過渡 */
+}
+
+.social-icon img {
+  width: 100%; /* 圖標圖片的寬度 */
+  height: auto; /* 自動高度 */
+}
+
+.social-icon:hover {
+  transform: scale(1.1); /* 鼠標懸停時放大 */
+}
